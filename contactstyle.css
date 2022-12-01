@@ -1,0 +1,129 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: #bbb;
+}
+
+.main-header {
+  background: #000000;
+}
+
+.navigation {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.navigation h1 {
+  color:  #f9842c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navigation ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px; /*This spaced the li elements*/
+  padding: 10px; /*The black background*/
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px; /*The orange hover*/
+}
+
+.navigation ul li a:hover {
+  background: #f9842c;
+  border-radius: 60px;
+}
+
+/*.content {
+  margin: 30px;
+} I initially did this to add space around the content to push down the footer. But I did position: fixed and bottom 0 instead.*/
+
+/*.content label {
+  padding: 10px;
+}
+
+.content input {
+  margin: 10px 0;
+}*/
+
+/*.contact h2, form, form textarea {
+  font-family: sans-serif;
+}
+
+.contact-header {
+  text-align: center;
+  padding: 10px 10px 0;
+}
+
+.contact-form {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-form textarea {
+  font-size: 16px;
+}*/
+
+.contact-header {
+  text-align: center;
+}
+
+.contact-form {
+  width: 50%;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  position: relative;
+  left: 25%;
+}
+
+input[type=text], [type=email], [type=tel], [type=submit], textarea {
+  font-family: sans-serif;
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0; /*This spaces between label and input*/
+  box-sizing: border-box; /*This keeps everything within the container*/
+}
+
+.submit {
+  background: #000000;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  opacity: 0.6;
+}
+
+.footer {
+  background: #f9842c;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 10px 0;
+  /*margin-top: 80px; I orginally did a margin-top to push the footer more down but position: fixed kept it at the bottom.*/
+}
+
+.footer .social {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.social a {
+  height: 30px;
+  width: 30px;
+  display: inline-flex;
+  padding: 0 25px;
+}

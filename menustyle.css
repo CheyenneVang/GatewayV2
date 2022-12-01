@@ -1,0 +1,109 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: #ccc;
+  position: relative;
+  top: 40px;
+}
+
+.main-header {
+  background: #000000;
+  position: fixed; 
+  width: 100%;
+  z-index: 1;
+  top: 0px;
+}
+
+.navigation {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.navigation h1 {
+  color:  #f9842c;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navigation ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px; /*This spaced the li elements*/
+  padding: 10px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.navigation ul li a:hover {
+  background: #f9842c;
+  border-radius: 60px;
+}
+
+.menu-heading {
+  text-transform: uppercase;
+  padding: 10px;
+  border-bottom: 1px solid #808080;
+  margin: 0 auto 10px auto;
+}
+
+.menu {
+  margin: 20px; /*Added space between content and sides of browser*/
+}
+
+.menu-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.menu-item-img {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0; /*This makes sure the pictures don't shrink when the screen size changes*/
+  object-fit: cover; 
+  margin-right: 24px;
+}
+
+.menu-item-head {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-text {
+  flex-grow: 1; /*This increased the width of the heading and <p>*/
+}
+
+.menu-item-text .menu-item-button {
+  background: #000;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+  
+.footer {
+  background: #f9842c;
+  padding: 10px 0;
+}
+
+.footer .social {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.social a {
+  height: 30px;
+  width: 30px;
+  display: inline-flex;
+  padding: 0 25px;
+}

@@ -1,0 +1,117 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-header {
+  background: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0px;
+}
+
+.navigation {
+  width: 85%; /*This shrunk the nav bar section so it moved in more. So no need for padding yet*/
+  display: flex;
+  justify-content: space-between;
+  margin: auto; /*This added space from the sides of the navbar*/
+}
+
+.navigation h1 {
+  color: #f9842c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navigation ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px; /*This spaced the li elements*/
+  padding: 10px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.navigation ul li a:hover {
+  background: #f9842c;
+  border-radius: 60px;
+}
+
+#hero {
+  background-image: url("images/breakfast-hero-img.png");
+  /*https://popmenucloud.com/iavcjfdr/9894600e-44a0-4607-ac5c-46d5d350b829*/
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  position: relative;
+  top: 70px;
+  margin-bottom: 50px;
+}
+
+.hero-text h2 {
+  position: relative;
+  border: 3px solid white;
+  color: #fff;
+  font-size: 70px;
+  line-height: 1.6em; /*Added space within border*/
+  text-align: center;
+  text-transform: uppercase;
+  top: 100px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.button {
+  position: relative;
+  background: #000;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 16px 32px; /*1em 2em; I was just testing out em and kind of liked it but I converted to px because I searched that em is usually used for font sizes.*/
+  left: 46%;
+  top: 30%;
+}
+
+.button:hover {
+  background: #f9842c;
+  opacity: 0.6;
+}
+
+.about {
+  position: relative;
+  top: 70px;
+  padding-left: 10px;
+}
+
+.footer {
+  background: #f9842c;
+  position: relative;
+  top: 70px;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+.footer .social {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  /*column-gap: 50px; I took this out because gap property may not be supported with flex for browsers*/
+  /*justify-content: space-evenly;*/
+}
+
+.social a {
+  height: 30px;
+  width: 30px;
+  display: inline-flex;
+  padding: 0 25px;
+}
